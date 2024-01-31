@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Postal Code" id="postalCode" name="postalCode">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Annual Anount" id="annualIncome" name="annualIncome">
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="form-group">
+            <div class="btn-submit">
+                <input data-ga-sendevent="true" data-ga-lable="Call Me Back - Submit" id="btn_Submit" onclick="submitForm(this.form)" class="btn btn-primary btn-block right" value="Submit">
+            </div>
+        </div>
+    </div>
+</form>
+
+<h1>Take Home</h1>
+
+<h1 class="fw-bold"  id="calculatedValue"></h1>
+
