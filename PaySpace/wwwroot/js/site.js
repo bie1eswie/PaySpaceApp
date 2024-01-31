@@ -6,5 +6,5 @@ function submitForm(form) {
 }
 function onSuccess(param) {
     console.log(param);
-    $("#calculatedValue").text(param.calculatedValue);
+    $("#calculatedValue").text(`Yaur Annual tax is ${param.calculatedValue} and your total after tax is ${param.annualIncome - param.calculatedValue}`);
 }
